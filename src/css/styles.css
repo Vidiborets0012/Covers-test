@@ -6,13 +6,26 @@
 */
 /* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+/* Styles for Mobile devices */
+
+/* .container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+} */
+/* Styles for Tablet devices */
+/* @media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+} */
+/* Styles for Desktop devices */
+/* @media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+} */
