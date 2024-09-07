@@ -29,3 +29,242 @@
     max-width: 1200px;
   }
 } */
+/* body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.content {
+  position: relative;
+}
+.marquee {
+  position: absolute;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+  font-family: 'Pridi', sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+.marquee__inner {
+  height: 100vh;
+  display: flex;
+  transform: rotate(16deg);
+}
+
+.marquee__line {
+  background-color: #ffdc00;
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 8);
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.covers h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  height: 508px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.covers {
+  background-image: url(../img/projects/covers-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 64px;
+}
+
+.covers-content {
+  position: relative;
+}
+
+.covers-merquee {
+  height: 508px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.covers-merquee-inner {
+  display: flex;
+  margin-top: 14px;
+  transform: translateY(-234px) rotate(16deg);
+}
+
+.covers-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.covers-merquee-inner img {
+  width: 282px;
+  margin-right: 14px;
+}
+
+.marquee__line-raw {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    height: 960px;
+  }
+  .covers-merquee {
+    height: 960px;
+  }
+  .covers-merquee-inner img {
+    width: 544px;
+    height: 314px;
+  }
+}
+
+/* @media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+} */
+
+/* .covers-list li {
+  width: 282px;
+  margin: 14px;
+  transition: transform 0.3s ease;
+}
+
+.covers-list-animated li {
+  animation: moveCovers 5s infinite linear;
+} */
+
+/* @keyframes moveCovers {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+} */
+
+/* .marquee {
+  Стилі для біжучого рядка 
+
+} */
+
+/* .marquee__inner {
+  Стилі для внутрішнього контейнера біжучого рядка
+
+} */
+
+/* .marquee__inner ul {
+  Стилі для списку
+  display: flex;
+  flex-direction: column; Розташувати елементи списку вертикально
+  
+} */
+
+/* .marquee__inner li {
+  Стилі для елементів списку
+  width: 100%; Ширина елемента займає всю ширину контейнера
+  text-align: center; Вирівнювання зображення по центру
+} */
+
+/* .marquee__inner li img {
+  Стилі для зображень
+  max-width: 100%; Максимальна ширина зображення
+  height: auto; Висота зображення підлаштовується автоматично
+} */
+
+/* Медіа-запити для різних пристроїв */
+
+/* Стилі для мобільних пристроїв */
+/* @media (min-width: 375px) {
+} */
+/* Стилі для планшетів */
+/* @media (min-width: 768px) {
+} */
+/* Стилі для десктопів */
+/* @media (min-width: 1440px) {
+} */
