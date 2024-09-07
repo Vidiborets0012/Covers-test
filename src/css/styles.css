@@ -191,6 +191,9 @@ img {
   .covers-merquee {
     height: 960px;
   }
+  .covers-merquee-inner {
+    margin-top: 24px;
+  }
   .covers-merquee-inner img {
     width: 544px;
     height: 314px;
