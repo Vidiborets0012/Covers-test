@@ -122,7 +122,7 @@ img {
 }
 
 .covers {
-  background-image: url(../img/projects/covers-bg.png);
+  background-image: url(/img/projects/covers-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
