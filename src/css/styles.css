@@ -195,6 +195,12 @@ img {
   }
 }
 
+@media screen and (min-resolution: 192dpi) {
+  .covers-bg-container {
+    background-image: url(/img/projects/covers-bg@2x.png);
+  }
+}
+
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
