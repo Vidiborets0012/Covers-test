@@ -135,7 +135,7 @@ img {
   left: 0;
   right: 0;
   height: 508px;
-  background-image: url(/img/projects/covers-bg.png);
+  background-image: url(/img/covers/covers-ellipse-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -197,7 +197,7 @@ img {
 
 @media screen and (min-resolution: 192dpi) {
   .covers-bg-container {
-    background-image: url(/img/projects/covers-bg@2x.png);
+    background-image: url(/img/covers/covers-ellipse-bg@2x.png);
   }
 }
 
