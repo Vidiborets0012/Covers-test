@@ -106,7 +106,6 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -122,11 +121,25 @@ img {
 }
 
 .covers {
+  position: relative;
+  /* background-image: url(/img/projects/covers-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 64px; */
+}
+
+.covers-bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 508px;
   background-image: url(/img/projects/covers-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 64px;
+  z-index: -1;
 }
 
 .covers-content {
@@ -186,11 +199,17 @@ img {
   .container {
     max-width: 375px;
   }
+  .covers-bg-container {
+    height: 508px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    height: 960px;
+  }
+  .covers-bg-container {
     height: 960px;
   }
   .covers-merquee {
