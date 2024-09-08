@@ -165,15 +165,20 @@ img {
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.covers.animate .marquee__line-raw {
+  animation-play-state: running; /* Анімація запускається при додаванні класу .animate */
 }
 
 @keyframes marqueeLine {
   from {
-    transform: translateX(-20%);
+    transform: translateY(0%);
   }
 
   to {
-    transform: translateX(-180%);
+    transform: translateX(-100%);
   }
 }
 
@@ -200,11 +205,11 @@ img {
   }
 }
 
-/* @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
   }
-} */
+}
 
 /* .covers-list li {
   width: 282px;
