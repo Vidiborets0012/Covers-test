@@ -29,8 +29,8 @@
 
 // observer.observe(coversSection);
 
-import { initCoversAnimation } from "./js/covers";
+// import { initCoversAnimation } from "./js/covers";
 
-document.addEventListener('DOMContentLoaded', () => {
-  initCoversAnimation();
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//   initCoversAnimation();
+// })

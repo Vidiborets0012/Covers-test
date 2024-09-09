@@ -93,11 +93,11 @@ body {
   margin: 0;
 }
 
-img {
+/* img {
   display: block;
   width: 100%;
   height: auto;
-}
+} */
 
 .covers h2 {
   position: absolute;
@@ -135,6 +135,7 @@ img {
   left: 0;
   right: 0;
   height: 508px;
+
   background-image: url(/img/covers/covers-ellipse-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,7 +167,7 @@ img {
 }
 
 .covers-merquee-inner img {
-  width: 282px;
+  /* width: 282px; */
   margin-right: 14px;
 }
 
@@ -174,6 +175,8 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
+  gap: 14px;
+  width: 100%;
   animation-name: marqueeLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
@@ -181,8 +184,15 @@ img {
   animation-play-state: paused;
 }
 
+.marquee__line-raw img {
+  width: 282px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Анімація запускається при додаванні класу .animate */
 .covers.animate .marquee__line-raw {
-  animation-play-state: running; /* Анімація запускається при додаванні класу .animate */
+  animation-play-state: running;
 }
 
 @keyframes marqueeLine {
